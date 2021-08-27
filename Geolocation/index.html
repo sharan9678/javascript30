@@ -59,6 +59,9 @@
     /*Compass: https://thenounproject.com/search/?q=compass&i=592352*/
   </style>
   <script>
+      //This require macbook(xcode) and iphone simulator to test it 
+      //This appliction also requires geo-location access hence a private secured server to run this
+
       const arrow = document.querySelector('.arrow');
       const speed = document.querySelector('.speed-value');
 
@@ -68,7 +71,7 @@
           arrow.style.transform = `rotate(${data.coords.heading}deg)`;
       }, (err) => {
           console.log(err);
-      })
+      });
   </script>
 </body>
 </html>
